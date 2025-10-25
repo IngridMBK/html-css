@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id - em CSS é # (só pode um elemento)
+    em HTML é class - em CSS é . (pode vários elementos)
+ 
+    No HTML e CSS, class e id são atributos usados para identificar elementos e estilizá-los.
+    -> Class: usado para agrupar elementos que têm características semelhantes.
+    - pode ser aplicado a múltiplos elementos na mesma página.
+    
+    ID: usado para identificar um elemento de forma única na página.
+    - deve ser exclusivo para cada elemento na página (não pode ser repetido).
+
+    Dica: Não dê nome à suas classes pela forma e sim pela funcionalidade.
+
+*/
+
+body {
+  background-color: rgb(205, 255, 203);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { 
+  color: rgb(4, 109, 0);
+}
+
+h1#principal {
+  text-align: center;
+  background-color: rgb(4, 109, 0);
+  color: white;
+}
+
+h2 {
+  color: rgb(51, 77, 49);
+}
+
+.basico {
+    color: #3c805e;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+  background-color: #c5c56070;
+}

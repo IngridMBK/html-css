@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos de Caixas</title>
+  <style>
+    h1 { /* box-level*/
+      background-color: lightgray;
+      height: 300px;
+      width: 300px;
+      /*
+      border-width: 10px;
+      border-style: solid;
+      border-color: darkslategray;
+      
+      Abaixo a forma abreviada do border:
+      */
+      border: 10px solid darkslategrey;
+
+
+      /*
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      Abaixo a forma abreviada do padding:
+      */
+
+      padding: 10px;
+
+
+      /*
+      A ordem para colocar de maneira abreviada é sempre a mesma (top - right - bottom - left), no mesmo sentido de um relógio. 
+
+      Quando é o mesmo valor para todas as opções, basta colocar uma vez! 
+
+      Quando você coloca apenas dois valores, como por exemplo:
+      padding: 10px 20px; 
+      o primeiro valor (10px) vai para top e bottom, e o segundo valor (20px)vai para right e left.
+      */
+
+
+
+      /*
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+
+      Abaixo a forma abreviada de margin:
+      */
+
+      margin: 20px 20px 40px 20px;
+      /*
+
+      margin: auto;
+      centraliza a caixa.
+
+      quando tiver apenas dois valores e você quer centralizar a caixa, basta fazer: 
+      margin: 20px auto 40px auto; 
+
+      */
+
+
+      /*
+      outline-width: 5px;
+      outline-style: dashed;
+      outline-color: salmon;
+      */
+
+      outline: 5px dashed salmon;
+
+
+
+    
+    
+
+    }
+
+    a { /* inline-level*/
+      border-width: 10px;
+      border-style: solid;
+      border-color: red;
+
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  </style>
+
+</head>
+
+<!-- Da para mudar de box-level para inline-level e vice versa    utilizando ( display: inline; ) ou ( display: block; ).
+Muda a característica normal de um elemento. 
+
+ Também tem a opção ( display: inline-block; ), sendo os dois ao mesmo tempo, um com características do outro.
+ -->
+
+
+
+
+<body>
+  <h1>Exemplo de caixa box-level</h1>
+  <p>Parágrafos também são exemplos de box-level mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+  
+</body>
+</html>

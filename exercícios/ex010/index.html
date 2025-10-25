@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do navegador.</p>
+
+  <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+  </picture>
+
+  <!--Para a tag <source media> precisa colocar as fotos em ordem crescente porém adiciona-las de forma decrescente sendo a maior a base. Então você coloca ela (a maior) primeiro embaixo e vai adicionando as outras em cima, a menor sempre em cima.-->
+
+  <h1>Reproduzindo áudio</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5. </p>
+
+  <!--<audio src="midia/audio-tracktribe.mp3" controls> </audio>-->
+  <!--MP3 WAV OGG-->
+
+  <audio preload="metadata" autoplay controls loop>
+    <source src="midia/audio-tracktribe.mp3" type="audio/mp3">
+  </audio>
+
+  <!--Quando se trata de imagem, áudio e vídeo, qualidade top é para arquivo feito download, não para arquivo de navegação.-->
+
+  
+</body>
+</html>

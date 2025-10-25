@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outras formatações</title>
+</head>
+
+<body>
+  <h1>Outras formatações</h1>
+  <h2>Código-fonte / Pré-formatação</h2>
+  <p>O comando<code> document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>  
+
+  <pre> <!--Tag usada para exibir texto pré-formatado, mantém espaços, quebras de linha e indentação exatamente como estão no código-fonte. (muitas vezes usada com a tag <code>).-->
+    <code> <!-- Tag usada para indicar que o texto dentro dela é código de programação.-->
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+      print(f'O número {num} é PAR')
+    else:
+      print(f'O número {num} é ÍMPAR')
+      print('Fim do programa')
+    </code>
+  </pre>
+
+  <h2>Citações</h2>
+  <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q> <!--Tag <q> para citações simples e curtas. --> </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/_/LLmxDAEACAAJ?hl=pt-BR&sa=X&ved=2ahUKEwiEpePq0NuMAxWsrJUCHaqtGwMQre8FegQIDRAI">A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote> <!-- Tag usada para citações longas, geralmente de autores ou fontes.E o atributo (cite) indica de onde veio a citação. É útil para dar credibilidade e clareza ao conteúdo, principalmente em artigos e textos mais formais. -->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!--A tag <abbr> é usada para marcar abreviações ou siglas, oferecendo a opção de mostrar o significado completo quando o usuário passa o mouse por cima (tooltip). Você coloca o significado no atributo (title).-->
+    <!--Tooltip é aquele balão de informação que aparece quando você passa o mouse por cima de um elemento (tipo uma dica rápida). Tooltip = dica rápida + ajuda visual. -->  
+
+    <!--DICA para envelopar com mais rpidez:                                               1. Selecione o texto que quer envelopar. 2. Pressione as teclas (ctrl + shift + p) 
+    3.Digite: (Emmet: Wrap With Abbreviation). 4. Digite a tag desejada (ex: strong, div, span, etc). 5. Pressione Enter.
+    Ele automaticamente coloca a tag ao redor do texto!-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!--A tag <bdo> é usada para forçar a direção do texto, da esquerda para direita (ltr) ou da direita para esquerda (rtl). O artibuto (dir) pode ser: ltr = left to right /
+    rtl = right to left. -->
+
+
+</body>
+</html>
